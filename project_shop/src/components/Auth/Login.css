@@ -1,0 +1,137 @@
+/* Apply a consistent font and background color for the entire page */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f3f4f6;
+    /* Light grey background for a subtle effect */
+}
+
+/* Container for the login page with full viewport height and padding */
+.login-container {
+    min-height: 100vh;
+    padding: 20px;
+    /* Padding around the container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card styling with rounded corners and no border */
+.card {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for the card */
+}
+
+/* Card body with a white background, padding, and soft shadow */
+.card-body {
+    position: relative;
+    padding: 2rem;
+    background-color: #fff;
+    /* White background inside the card */
+    border-radius: 20px;
+}
+
+/* Heading styling with larger font size and bold weight */
+h2 {
+    font-size: 2rem;
+    /* Larger font size */
+    font-weight: 700;
+    /* Bold weight */
+    color: #333;
+    /* Dark grey color for better readability */
+    text-align: center;
+    /* Center the heading */
+    margin-bottom: 1.5rem;
+    /* Space below the heading */
+}
+
+/* Styling for input fields with rounded corners and smooth transitions */
+.form-control {
+    border-radius: 10px;
+    /* Rounded corners for inputs */
+    border: 1px solid #ddd;
+    /* Light grey border */
+    box-shadow: none;
+    /* No shadow */
+    transition: border-color 0.2s, box-shadow 0.2s;
+    /* Smooth transition */
+}
+
+/* Focus state for input fields with a purple border and shadow */
+.form-control:focus {
+    border-color: #6a11cb;
+    /* Purple border on focus */
+    box-shadow: 0 0 0 0.2rem rgba(106, 17, 203, 0.25);
+    /* Light purple shadow */
+}
+
+/* Primary button with gradient background and smooth hover effect */
+.btn-primary {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    /* Gradient background */
+    border: none;
+    /* No border */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 10px 20px;
+    /* Padding for the button */
+    font-size: 1rem;
+    /* Font size */
+    transition: background 0.3s, transform 0.2s;
+    /* Smooth transition on hover */
+}
+
+/* Hover state for the primary button with slight scaling */
+.btn-primary:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge the button on hover */
+}
+
+/* Link styling with purple color and smooth transition */
+a {
+    color: #6a11cb;
+    /* Purple color */
+    text-decoration: none;
+    /* Remove underline */
+    transition: color 0.2s;
+    /* Smooth transition on hover */
+}
+
+/* Hover state for links with a darker purple color */
+a:hover {
+    color: #5a0fbf;
+    /* Darker purple on hover */
+}
+
+/* Margin below block-level links */
+a.d-block {
+    margin-bottom: 1rem;
+    /* Margin below each link */
+}
+
+/* Centered text with medium weight and dark color */
+.text-center {
+    color: #333;
+    /* Dark grey color */
+    font-weight: 500;
+    /* Medium weight */
+}
+
+/* Styling for danger alerts with rounded corners */
+.alert-danger {
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    .login-container {
+        padding: 10px;
+        /* Reduce padding on smaller screens */
+    }
+}

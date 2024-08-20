@@ -1,4 +1,6 @@
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import HomePage from "./components/home/HomePage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ItemDetail from "./components/itemDetail/ItemDetail";
@@ -6,6 +8,8 @@ import Navbar from "./components/navbar/Navbar";
 import Cart from "./components/cart/Cart";
 import Orders from "./components/orders/Orders";
 import Checkout from "./components/checkout/Checkout";
+import Footer from "./components/Footer/Footer";
+import Login from "./components/Auth/Login";
 
 function App() {
   return (
@@ -15,12 +19,16 @@ function App() {
           <Navbar />
         </div>
         <Routes>
+          <Route path="/login" element={<Login />} />
           <Route path="/item/:id" element={<ItemDetail />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/orders" element={<Orders />} />
           <Route path="/checkout" element={<Checkout />} />
           <Route exact path="/" element={<HomePage />} />
         </Routes>
+        <div>
+          <Footer />
+        </div>
       </BrowserRouter>
     </div>
   );
